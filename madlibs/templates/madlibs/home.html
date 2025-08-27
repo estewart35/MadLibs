@@ -1,0 +1,19 @@
+{% extends 'madlibs/base.html' %}
+
+{% block body %}
+    <h1 class="text-center mb-4">Select a Mad Lib</h1>
+     
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        {% for madlib in madlibs %}
+            <div class="col">
+                <div class="card shadow h-100">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h4 class="card-title">{{ madlib.title }}</h4>
+                        <p class="card-text text-muted">Fill out the story and have some fun!</p>
+                        <a href="{% url 'madlib_form' madlib.id %}" class="btn btn-primary mt-auto mx-auto">Start Mad Lib</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
