@@ -1,0 +1,1 @@
+web: gunicorn madlibs_project.wsgi
