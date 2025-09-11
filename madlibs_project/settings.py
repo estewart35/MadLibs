@@ -30,6 +30,10 @@ DEBUG = os.environ.get("DJANGO_DEVELOPMENT") == "1"
 
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(",")
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://madlibs.up.railway.app'
+]
+
 
 # Application definition
 
