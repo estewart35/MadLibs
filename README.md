@@ -33,8 +33,8 @@
 
 Clone the repo:  
 ```bash
-git clone https://github.com/estewart35/PriorityMatrix.git
-cd PriorityMatrix
+git clone https://github.com/estewart35/MadLibs.git
+cd MadLibs
 ```
 
 Create a `.env` file in the project root and add the required environment variables:
